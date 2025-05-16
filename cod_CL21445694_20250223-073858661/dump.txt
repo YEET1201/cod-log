@@ -1,0 +1,342 @@
+
+************* Preparing the environment for Debugger Extensions Gallery repositories **************
+   ExtensionRepository : Implicit
+   UseExperimentalFeatureForNugetShare : true
+   AllowNugetExeUpdate : true
+   NonInteractiveNuget : true
+   AllowNugetMSCredentialProviderInstall : true
+   AllowParallelInitializationOfLocalRepositories : true
+   EnableRedirectToChakraJsProvider : false
+
+   -- Configuring repositories
+      ----> Repository : LocalInstalled, Enabled: true
+      ----> Repository : UserExtensions, Enabled: true
+
+>>>>>>>>>>>>> Preparing the environment for Debugger Extensions Gallery repositories completed, duration 0.000 seconds
+
+************* Waiting for Debugger Extensions Gallery to Initialize **************
+
+>>>>>>>>>>>>> Waiting for Debugger Extensions Gallery to Initialize completed, duration 0.031 seconds
+   ----> Repository : UserExtensions, Enabled: true, Packages count: 0
+   ----> Repository : LocalInstalled, Enabled: true, Packages count: 44
+
+Microsoft (R) Windows Debugger Version 10.0.27829.1001 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+
+Loading Dump File [C:\Users\Administrator\Downloads\Cod Crash\crash_reports\Crash report zips\cod_CL21445694_20250223-073858661\dump.dmp]
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*
+Symbol search path is: srv*
+Executable search path is: 
+Windows 10 Version 26100 MP (16 procs) Free x64
+Product: WinNt, suite: SingleUserTS
+Edition build lab: 26100.1.amd64fre.ge_release.240331-1435
+Debug session time: Sun Feb 23 04:08:30.000 2025 (UTC - 4:00)
+System Uptime: 0 days 1:52:20.225
+Process Uptime: 0 days 0:29:36.000
+................................................................
+................................................................
+................................................................
+...........................................
+This dump file has an exception of interest stored in it.
+The stored exception information can be accessed via .ecxr
+(2684.23cc): Unknown exception - code 00001338 (first/second chance not available)
+
++------------------------------------------------------------------------+
+| This target supports Hardware-enforced Stack Protection. A HW based    |
+| "Shadow Stack" may be available to assist in debugging and analysis.   |
+| See aka.ms/userhsp for more info.                                      |
+|                                                                        |
+| dps @ssp                                                               |
+|                                                                        |
++------------------------------------------------------------------------+
+
+For analysis of this file, run !analyze -v
+ntdll!NtDelayExecution+0x14:
+00007ff9`59a9fe54 c3              ret
+0:000> !analyze -v
+................................................................
+................................................................
+................................................................
+...........................................
+*******************************************************************************
+*                                                                             *
+*                        Exception Analysis                                   *
+*                                                                             *
+*******************************************************************************
+
+*** WARNING: Unable to verify timestamp for cod.exe
+
+KEY_VALUES_STRING: 1
+
+    Key  : Analysis.CPU.mSec
+    Value: 484
+
+    Key  : Analysis.Elapsed.mSec
+    Value: 15037
+
+    Key  : Analysis.IO.Other.Mb
+    Value: 28
+
+    Key  : Analysis.IO.Read.Mb
+    Value: 1
+
+    Key  : Analysis.IO.Write.Mb
+    Value: 59
+
+    Key  : Analysis.Init.CPU.mSec
+    Value: 406
+
+    Key  : Analysis.Init.Elapsed.mSec
+    Value: 12081
+
+    Key  : Analysis.Memory.CommitPeak.Mb
+    Value: 105
+
+    Key  : Analysis.Version.DbgEng
+    Value: 10.0.27829.1001
+
+    Key  : Analysis.Version.Description
+    Value: 10.2503.24.01 amd64fre
+
+    Key  : Analysis.Version.Ext
+    Value: 1.2503.24.1
+
+    Key  : Failure.Bucket
+    Value: APPLICATION_FAULT_1338_cod.exe!Unknown
+
+    Key  : Failure.Exception.Code
+    Value: 0x1338
+
+    Key  : Failure.Exception.IP.Address
+    Value: 0x7ff95728bb0a
+
+    Key  : Failure.Exception.IP.Module
+    Value: KERNELBASE
+
+    Key  : Failure.Exception.IP.Offset
+    Value: 0xcbb0a
+
+    Key  : Failure.Hash
+    Value: {b1f843ce-5c08-4bbf-d681-55d7987fa4a4}
+
+    Key  : Failure.ProblemClass.Primary
+    Value: APPLICATION_FAULT
+
+    Key  : Timeline.OS.Boot.DeltaSec
+    Value: 6740
+
+    Key  : Timeline.Process.Start.DeltaSec
+    Value: 1776
+
+    Key  : WER.OS.Branch
+    Value: ge_release
+
+    Key  : WER.OS.Version
+    Value: 10.0.26100.1
+
+    Key  : WER.Process.Version
+    Value: 2.0.0.0
+
+
+FILE_IN_CAB:  dump.dmp
+
+CONTEXT:  (.ecxr)
+rax=0000000000000000 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000001338
+rip=00007ff95728bb0a rsp=00000047ae0f2d90 rbp=0000000000000000
+ r8=0000000000000000  r9=0000000000000000 r10=0000000000000000
+r11=0000000000000000 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000076
+iopl=0         nv up ei pl nz na po nc
+cs=0033  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000204
+KERNELBASE!RaiseException+0x8a:
+00007ff9`5728bb0a 0f1f440000      nop     dword ptr [rax+rax]
+Resetting default scope
+
+EXCEPTION_RECORD:  (.exr -1)
+ExceptionAddress: 00007ff95728bb0a (KERNELBASE!RaiseException+0x000000000000008a)
+   ExceptionCode: 00001338
+  ExceptionFlags: 00000080
+NumberParameters: 0
+
+PROCESS_NAME:  cod.exe
+
+ERROR_CODE: (NTSTATUS) 0x1338 - <Unable to get error code text>
+
+EXCEPTION_CODE_STR:  1338
+
+STACK_TEXT:  
+00000047`ae0f2d90 00007ff7`c880daee     : 00000000`185da897 00000000`00000000 00000000`00000076 00007ff9`5700ddfd : KERNELBASE!RaiseException+0x8a
+00000047`ae0f2e90 00000000`185da897     : 00000000`00000000 00000000`00000076 00007ff9`5700ddfd 00000047`ae0f5280 : cod+0x81adaee
+00000047`ae0f2e98 00000000`00000000     : 00000000`00000076 00007ff9`5700ddfd 00000047`ae0f5280 00000000`00000000 : 0x185da897
+
+
+STACK_COMMAND: ~0s; .ecxr ; kb
+
+SYMBOL_NAME:  cod+81adaee
+
+MODULE_NAME: cod
+
+IMAGE_NAME:  cod.exe
+
+FAILURE_BUCKET_ID:  APPLICATION_FAULT_1338_cod.exe!Unknown
+
+OS_VERSION:  10.0.26100.1
+
+BUILDLAB_STR:  ge_release
+
+OSPLATFORM_TYPE:  x64
+
+OSNAME:  Windows 10
+
+IMAGE_VERSION:  2.0.0.0
+
+FAILURE_ID_HASH:  {b1f843ce-5c08-4bbf-d681-55d7987fa4a4}
+
+Followup:     MachineOwner
+---------
+
+0:000> !analyze -v
+*******************************************************************************
+*                                                                             *
+*                        Exception Analysis                                   *
+*                                                                             *
+*******************************************************************************
+
+
+KEY_VALUES_STRING: 1
+
+    Key  : Analysis.CPU.mSec
+    Value: 203
+
+    Key  : Analysis.Elapsed.mSec
+    Value: 208
+
+    Key  : Analysis.IO.Other.Mb
+    Value: 28
+
+    Key  : Analysis.IO.Read.Mb
+    Value: 1
+
+    Key  : Analysis.IO.Write.Mb
+    Value: 59
+
+    Key  : Analysis.Init.CPU.mSec
+    Value: 890
+
+    Key  : Analysis.Init.Elapsed.mSec
+    Value: 27121
+
+    Key  : Analysis.Memory.CommitPeak.Mb
+    Value: 113
+
+    Key  : Analysis.Version.DbgEng
+    Value: 10.0.27829.1001
+
+    Key  : Analysis.Version.Description
+    Value: 10.2503.24.01 amd64fre
+
+    Key  : Analysis.Version.Ext
+    Value: 1.2503.24.1
+
+    Key  : Failure.Bucket
+    Value: APPLICATION_FAULT_1338_cod.exe!Unknown
+
+    Key  : Failure.Exception.Code
+    Value: 0x1338
+
+    Key  : Failure.Exception.IP.Address
+    Value: 0x7ff95728bb0a
+
+    Key  : Failure.Exception.IP.Module
+    Value: KERNELBASE
+
+    Key  : Failure.Exception.IP.Offset
+    Value: 0xcbb0a
+
+    Key  : Failure.Hash
+    Value: {b1f843ce-5c08-4bbf-d681-55d7987fa4a4}
+
+    Key  : Failure.ProblemClass.Primary
+    Value: APPLICATION_FAULT
+
+    Key  : Timeline.OS.Boot.DeltaSec
+    Value: 6740
+
+    Key  : Timeline.Process.Start.DeltaSec
+    Value: 1776
+
+    Key  : WER.OS.Branch
+    Value: ge_release
+
+    Key  : WER.OS.Version
+    Value: 10.0.26100.1
+
+    Key  : WER.Process.Version
+    Value: 2.0.0.0
+
+
+FILE_IN_CAB:  dump.dmp
+
+CONTEXT:  (.ecxr)
+rax=0000000000000000 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000001338
+rip=00007ff95728bb0a rsp=00000047ae0f2d90 rbp=0000000000000000
+ r8=0000000000000000  r9=0000000000000000 r10=0000000000000000
+r11=0000000000000000 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000076
+iopl=0         nv up ei pl nz na po nc
+cs=0033  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000204
+KERNELBASE!RaiseException+0x8a:
+00007ff9`5728bb0a 0f1f440000      nop     dword ptr [rax+rax]
+Resetting default scope
+
+EXCEPTION_RECORD:  (.exr -1)
+ExceptionAddress: 00007ff95728bb0a (KERNELBASE!RaiseException+0x000000000000008a)
+   ExceptionCode: 00001338
+  ExceptionFlags: 00000080
+NumberParameters: 0
+
+PROCESS_NAME:  cod.exe
+
+ERROR_CODE: (NTSTATUS) 0x1338 - <Unable to get error code text>
+
+EXCEPTION_CODE_STR:  1338
+
+STACK_TEXT:  
+00000047`ae0f2d90 00007ff7`c880daee     : 00000000`185da897 00000000`00000000 00000000`00000076 00007ff9`5700ddfd : KERNELBASE!RaiseException+0x8a
+00000047`ae0f2e90 00000000`185da897     : 00000000`00000000 00000000`00000076 00007ff9`5700ddfd 00000047`ae0f5280 : cod+0x81adaee
+00000047`ae0f2e98 00000000`00000000     : 00000000`00000076 00007ff9`5700ddfd 00000047`ae0f5280 00000000`00000000 : 0x185da897
+
+
+STACK_COMMAND: ~0s; .ecxr ; kb
+
+SYMBOL_NAME:  cod+81adaee
+
+MODULE_NAME: cod
+
+IMAGE_NAME:  cod.exe
+
+FAILURE_BUCKET_ID:  APPLICATION_FAULT_1338_cod.exe!Unknown
+
+OS_VERSION:  10.0.26100.1
+
+BUILDLAB_STR:  ge_release
+
+OSPLATFORM_TYPE:  x64
+
+OSNAME:  Windows 10
+
+IMAGE_VERSION:  2.0.0.0
+
+FAILURE_ID_HASH:  {b1f843ce-5c08-4bbf-d681-55d7987fa4a4}
+
+Followup:     MachineOwner
+---------
+
