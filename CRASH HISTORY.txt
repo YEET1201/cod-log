@@ -1,0 +1,111 @@
+
+Crash 1 - Critical Process died 
+
+0xFFFFAB0CE3B5D140
+0x0000000000000000
+0xFFFFAB0CE3B5D140
+0x0000000000000000
+
+
+Crash 2 - Critical Process died 
+
+0xffffA3882C3DA100
+0x000000000000000
+0xffffA3882C3DA100
+0x000000000000000
+
+
+Crash 3 - Critical Process died 
+
+0xFFFFCB07BF6A5140
+0x0000000000000000
+0xFFFFCB07BF6A5140
+0x0000000000000000
+
+Crash 4 - system_service_exception
+
+
+0x00000000C0000006
+0xFFFFF8028A7AB015
+0XFFFF838DFF926B00
+0X000000000000000
+
+
+Crash 5 - Critical Process died 
+
+0xFFFFE08A3D626100
+0x0000000000000000
+0xFFFFE08A3D626100
+0x0000000000000000
+
+
+Crash 6 - system_service_exception
+
+
+0x00000000C0000006
+0xFFFFF80688A7B015
+0XFFFFBA857567E560
+0X000000000000000
+
+
+
+Crash 7 - Critical Process died 
+
+0xFFFF8A01806B5140
+0x0000000000000000
+0xFFFF8A01806B5140
+0x0000000000000000
+
+RAM TEST WITH 1 PASS COMPLETED WITH 0 ERRORS
+
+GPU CHANGED TO 2ND SLOT AFTER CRASH 7
+
+CRASH 8 - (NO BSOD SCREEN)
+
+Game froze and the monitor displaying the game turned grey, I was able to press on the background application on monitor 2 and then the cursor disappeared. PC did not do anything for the next 5-10 mins until I manually shut it down. No new event errors
+
+
+Crash 9 - System Service Exception
+
+No error codes because screen was glitched out.
+
+
+Crash 10- Critical process died
+
+0xFFFFAC0FC8521140
+0x00000000000000
+0xFFFFAC0FC8521140
+0x00000000000000
+
+Crash 11- Critical process died
+
+0xFFFFA78990417100
+0x000000000000000
+0xFFFFA78990417100
+0x000000000000000
+
+Crash 12 - Kernel Data Inpage Error ( BRAND NEW)
+
+0xFFFFB60FD9209AB0
+0xFFFFFFFFC000000E
+0x000000083B6518C0
+0xFFFFEF8FE72A6088
+
+
+Crash 13 -  system_service_exception
+
+0x00000000C0000006
+0xFFFFF80587C7B015
+0xFFFF97B25BAA6560
+0x000000000000000
+
+
+BLACK OPS 6 CRASH ERROR-
+
+Error Code: 0x00001338 (4226258964) N
+
+Signature: DB4C4DC0-EF8BFE5A-0D1915A8-7DA1B8D4
+
+Location: 0x00007FFCABBD016C (22235401) 
+
+Executable: cod.exe
