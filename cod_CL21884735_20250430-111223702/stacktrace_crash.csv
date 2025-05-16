@@ -1,0 +1,5 @@
+UsedInCrashSignature,FrameIndex,FrameAddress,FrameAdjustedAddress,ModuleBaseAddress,ModuleName
+1,2,0x00007FFED56E3F14,0x0000000000003F14,0x00007FFED56E0000,C:\WINDOWS\System32\win32u.dll
+1,1,0x00007FFE88CF464D,0x000000000007464D,0x00007FFE88C80000,C:\WINDOWS\SYSTEM32\D3D12Core.dll
+#,,,,,Number of frames captured: 2
+#,,,,,Crash signature generated - based on 2 frames : C13BDBDF-DEEE7574-A2BD172E-99053945
